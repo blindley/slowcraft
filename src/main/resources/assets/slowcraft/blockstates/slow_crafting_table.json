@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "slowcraft:block/slow_crafting_table" }
+  }
+}
