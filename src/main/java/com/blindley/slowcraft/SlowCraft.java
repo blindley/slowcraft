@@ -1,5 +1,6 @@
 package com.blindley.slowcraft;
 
+import com.blindley.slowcraft.block.ModBlocks;
 import com.blindley.slowcraft.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -31,6 +32,8 @@ public class SlowCraft
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
+
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in

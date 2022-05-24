@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "slowcraft:block/citrine_ore"
+  }
+}

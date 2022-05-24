@@ -1,4 +1,7 @@
 {
   "item.slowcraft.citrine": "Citrine",
-  "item.slowcraft.raw_citrine": "Raw Citrine"
+  "item.slowcraft.raw_citrine": "Raw Citrine",
+  "block.slowcraft.citrine_block": "Citrine Block",
+  "item.slowcraft.raw_citrine_block": "Raw Citrine Block",
+  "item.slowcraft.citrine_ore": "Citrine Ore"
 }
