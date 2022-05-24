@@ -1,6 +1,7 @@
 package com.blindley.slowcraft.block;
 
 import com.blindley.slowcraft.SlowCraft;
+import com.blindley.slowcraft.item.ModCreativeModeTab;
 import com.blindley.slowcraft.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,21 +22,21 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(9f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLOWCRAFT_TAB);
 
     public static final RegistryObject<Block> RAW_CITRINE_BLOCK = registerBlock("raw_citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(7f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLOWCRAFT_TAB);
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLOWCRAFT_TAB);
 
     public static final RegistryObject<Block> SLOW_CRAFTING_TABLE = registerBlock("slow_crafting_table",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(3f)
                     // .requiresCorrectToolForDrops()
-                    ), CreativeModeTab.TAB_MISC);
+                    ), ModCreativeModeTab.SLOWCRAFT_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
